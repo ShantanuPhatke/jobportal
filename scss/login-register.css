@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+@-webkit-keyframes slide-up {
+  from {
+    opacity: 0.5;
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0.5;
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal.login-register {
+  z-index: 1;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: fade-in;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: fade-in;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0;
+  animation-duration: 0.5s;
+  animation-name: fade-in;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  display: none;
+}
+
+.modal.login-register .form {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-name: slide-up;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 0.6s;
+  -moz-animation-name: slide-up;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0;
+  animation-duration: 0.6s;
+  animation-name: slide-up;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F8F8F8;
+  padding: 50px 70px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal.login-register .form img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15px;
+  color: #DDD;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: -40px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.modal.login-register .form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 0.5px solid #DDD;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.modal.login-register .form input[type=submit] {
+  width: 40%;
+  padding: 10px;
+  margin: 10px 20px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid #ff9f0c;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff9f0c;
+}
+
+.modal.login-register .form input[type=submit]:hover {
+  background: #ff9f0c;
+  color: #FFF;
+}
+
+.modal.login-register .form p {
+  font-family: "Poppins", sans-serif;
+  color: #4C4C4C;
+  margin-bottom: -10px;
+}
+
+.modal.login-register .form p span {
+  color: #ff9f0c;
+  cursor: pointer;
+}
+
+.modal.login-register .form span {
+  color: red;
+}
+
+.modal.login-register .form #closeModal {
+  color: #9A9A9A;
+  margin-top: 30px;
+  margin-bottom: -15px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=login-register.css.map */

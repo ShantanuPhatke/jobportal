@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/*# sourceMappingURL=common.css.map */

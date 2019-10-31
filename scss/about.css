@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+.container {
+  width: 100%;
+}
+
+.container .hero, .container .productSection {
+  position: relative;
+  z-index: -1;
+  height: 95vh;
+  width: auto;
+}
+
+.container .hero .content, .container .productSection .content {
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.container .hero .content .title, .container .productSection .content .title {
+  color: #1e1e1e;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.container .hero .content .text, .container .productSection .content .text {
+  color: #1e1e1e;
+  max-width: 50%;
+  font-size: 18px;
+}
+
+.container .hero {
+  background: url("./../img/AboutBG.svg") no-repeat right;
+}
+
+.container .productSection {
+  background: white;
+  margin-top: 50px;
+}
+
+.container .productSection .content {
+  text-align: center;
+  padding: 0;
+}
+
+.container .productSection .content .cardContainer {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.container .productSection .content .cardContainer .card {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  height: 250px;
+  width: 250px;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+}
+
+.container .productSection .content .cardContainer .card .cardContent {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container .productSection .content .cardContainer .card .cardContent img {
+  margin-top: 5%;
+  height: 80px;
+}
+
+.container .productSection .content .cardContainer .card .cardContent p {
+  color: #1e1e1e;
+  margin-top: 5%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+.container .productSection .content .cardContainer .card .cardContent a {
+  display: block;
+  margin-top: 10%;
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 500;
+  color: #9A9A9A;
+}
+/*# sourceMappingURL=about.css.map */

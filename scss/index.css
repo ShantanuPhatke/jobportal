@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+body {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+}
+
+.container .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 0;
+  background: url(./../img/HomeBG.svg) no-repeat left;
+  height: 100vh;
+  width: 100%;
+}
+
+.container .hero .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  padding-top: 50px;
+  margin-right: 50px;
+}
+
+.container .hero .content .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #1e1e1e;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.container .hero .content .desc {
+  width: 30%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: right;
+}
+
+.container .hero .content .desc p {
+  color: #1e1e1e;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.container .hero .content .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 40px;
+}
+
+.container .hero .content .cta button {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1.5px solid #ff9f0c;
+  height: 60px;
+  width: 150px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff9f0c;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  outline: none;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.container .hero .content .cta button:hover {
+  background: #ff9f0c;
+  color: #FFF;
+}
+/*# sourceMappingURL=index.css.map */

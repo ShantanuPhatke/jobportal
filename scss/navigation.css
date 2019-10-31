@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+.container {
+  width: 100%;
+}
+
+.container .navigationDesktop {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  background: #F8F8F8;
+  -webkit-box-shadow: 0 0.5px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.container .navigationDesktop img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+  cursor: pointer;
+  height: 30px;
+}
+
+.container .navigationDesktop .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+}
+
+.container .navigationDesktop .menu a {
+  text-decoration: none;
+  color: #4C4C4C;
+}
+
+.container .navigationDesktop .menu .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background: transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+  color: #4C4C4C;
+}
+
+.container .navigationDesktop .menu .items:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  color: #ff9f0c;
+}
+
+.container .navigationDesktop .menu .items.active {
+  font-weight: bold;
+  color: #ff9f0c;
+}
+/*# sourceMappingURL=navigation.css.map */

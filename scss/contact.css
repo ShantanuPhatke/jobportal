@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+.container {
+  width: 100%;
+}
+
+.container .hero, .container .productSection {
+  position: relative;
+  z-index: 0;
+  height: 95vh;
+  width: auto;
+}
+
+.container .hero .content, .container .productSection .content {
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.container .hero .content .title, .container .productSection .content .title {
+  color: #1e1e1e;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.container .hero .content form, .container .productSection .content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.container .hero .content form input, .container .hero .content form textarea, .container .productSection .content form input, .container .productSection .content form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 0.5px solid #DDD;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.container .hero .content form input[type=submit], .container .productSection .content form input[type=submit] {
+  width: 40%;
+  padding: 10px;
+  margin: 10px 20px;
+  width: 30%;
+  border-radius: 5px;
+  border: 1.5px solid #ff9f0c;
+  background: rgba(255, 255, 255, 0.4);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff9f0c;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.container .hero .content form input[type=submit]:hover, .container .productSection .content form input[type=submit]:hover {
+  background: #ff9f0c;
+  color: #FFF;
+}
+
+.container .hero .content form p, .container .productSection .content form p {
+  font-family: "Poppins", sans-serif;
+  color: #4C4C4C;
+  margin-bottom: -10px;
+}
+
+.container .hero .content form p span, .container .productSection .content form p span {
+  color: #65BBF6;
+  cursor: pointer;
+}
+
+.container .hero {
+  background: url("./../img/ContactBG.svg") no-repeat right;
+}
+/*# sourceMappingURL=contact.css.map */

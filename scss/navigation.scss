@@ -1,0 +1,52 @@
+@import './variables.scss';
+body{
+    
+}
+.container {
+    width: 100%;
+
+    .navigationDesktop {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        background: $offWhite;
+        box-shadow: 0 0.5px 3px rgba(0,0,0,.5);
+
+        img {
+            display: flex;
+            padding: 0 20px;
+            cursor: pointer;
+            height: 30px;
+        }
+        .menu {
+            display: flex;
+            padding: 0 20px;
+                
+            a {
+                text-decoration: none;
+                color: $darkestGrey;
+            }
+            .items {
+                display: flex;
+                text-align: center;
+                padding: 10px 20px;
+                border-radius: 3px;
+                background: transparent;
+                transition: 0.5s ease;
+                cursor: pointer;
+                color: $darkestGrey;
+            }
+            .items:hover {
+                transform: translateY(-5px);
+                color: $yellow;
+            }
+            .items.active{
+                font-weight: bold;
+                color: $yellow;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.container .sidebar {
+  background: #ff9f0c;
+  color: #F8F8F8;
+  height: 100%;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -300px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.container .sidebar .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 100%;
+  border-bottom: 0px solid #FFF;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container .sidebar .info img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.container .sidebar .info p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.container .sidebar .items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container .sidebar .items .item {
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  width: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.container .sidebar .items .item a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.container .sidebar .items .item:hover {
+  background: #FFF;
+  color: #ff9f0c;
+}
+
+.container .sidebar .items .item:hover a {
+  color: #ff9f0c;
+}
+
+.container #profile, .container #career, .container #jobs {
+  display: none;
+}
+
+.container .workspace {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+  overflow-y: scroll;
+}
+
+.container .workspace form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.container .workspace form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 0.5px solid #DDD;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.container .workspace form select {
+  width: calc(100% + 20px);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 0.5px solid #DDD;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.container .workspace form button {
+  width: 40%;
+  padding: 10px;
+  margin: 10px 20px;
+  width: 30%;
+  border-radius: 5px;
+  border: 1.5px solid #ff9f0c;
+  background: rgba(255, 255, 255, 0.4);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff9f0c;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+
+.container .workspace form button:hover {
+  background: #ff9f0c;
+  color: #FFF;
+}
+
+.container .workspace form p {
+  font-family: "Poppins", sans-serif;
+  color: #4C4C4C;
+  margin-bottom: -10px;
+}
+
+.container .workspace form p span {
+  color: #65BBF6;
+  cursor: pointer;
+}
+
+.container .workspace form .radioDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .workspace form .radioDiv input {
+  width: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 0.5px solid #DDD;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.container .workspace form .labelDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.container .workspace form .labelDiv label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  margin-left: -20px;
+  width: 130px;
+}
+
+.container .workspace form .labelDiv input, .container .workspace form .labelDiv select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+  margin-right: -10px;
+}
+
+.container .workspace form .labelDiv input[type=radio] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+}
+
+.container .workspace .sidebarButton {
+  -ms-flex-item-align: left;
+      -ms-grid-row-align: left;
+      align-self: left;
+  height: 50px;
+  width: 60px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.container .workspace .title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.container .workspace .description {
+  font-size: 25px;
+}
+
+.container .workspace .imgBG {
+  margin-top: 15%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.container .workspace .cardContainer .card {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .workspace .cardContainer .card .cardContent {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container .workspace .cardContainer .card .cardContent img {
+  margin-top: 5%;
+  height: 40px;
+}
+
+.container .workspace .cardContainer .card .cardContent p {
+  color: #1e1e1e;
+  margin-top: 5%;
+  font-size: 16px;
+  font-weight: normal;
+  width: 100%;
+}
+
+.container .workspace .cardContainer .card .cardContent a {
+  display: block;
+  margin-top: 10%;
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: 500;
+  color: #9A9A9A;
+}
+/*# sourceMappingURL=candidatedash.css.map */
